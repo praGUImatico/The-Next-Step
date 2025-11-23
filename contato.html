@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - The Next Step</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-rocket"></i>
+                <h1>The Next Step</h1>
+            </div>
+            <nav class="nav" id="nav">
+                <a href="index.html" class="nav-link"><i class="fas fa-home"></i> Início</a>
+                <a href="integrantes.html" class="nav-link"><i class="fas fa-users"></i> Integrantes</a>
+                <a href="sobre.html" class="nav-link"><i class="fas fa-info-circle"></i> Sobre</a>
+                <a href="faq.html" class="nav-link"><i class="fas fa-question-circle"></i> FAQ</a>
+                <a href="contato.html" class="nav-link active"><i class="fas fa-envelope"></i> Contato</a>
+                <a href="vagas.html" class="nav-link"><i class="fas fa-briefcase"></i> Vagas</a>
+                <a href="reskilling.html" class="nav-link"><i class="fas fa-graduation-cap"></i> Reskilling</a>
+            </nav>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section class="page-header">
+            <div class="container">
+                <h1>Entre em Contato</h1>
+                <p>Envie sua mensagem, dúvida ou sugestão</p>
+            </div>
+        </section>
+
+        <section class="contato-section">
+            <div class="container">
+                <div class="contato-content">
+                    <div class="contato-info">
+                        <h2>Fale Conosco</h2>
+                        <p>
+                            Estamos sempre abertos para ouvir você! Se tiver dúvidas, sugestões 
+                            ou quiser saber mais sobre o The Next Step, entre em contato através 
+                            do formulário ao lado.
+                        </p>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h3>Email</h3>
+                                <p>contato@thenextstep.com</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h3>Horário de Atendimento</h3>
+                                <p>Segunda a Sexta, 9h às 18h</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="contato-form" id="contatoForm" onsubmit="validarFormulario(event)">
+                        <div class="form-group">
+                            <label for="nome">Nome *</label>
+                            <input type="text" id="nome" name="nome" required>
+                            <span class="error-message" id="nome-error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">E-mail *</label>
+                            <input type="email" id="email" name="email" required>
+                            <span class="error-message" id="email-error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="assunto">Assunto</label>
+                            <input type="text" id="assunto" name="assunto">
+                            <span class="error-message" id="assunto-error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem *</label>
+                            <textarea id="mensagem" name="mensagem" rows="6" required></textarea>
+                            <span class="error-message" id="mensagem-error"></span>
+                        </div>
+
+                        <button type="submit" class="btn-primary">
+                            <i class="fas fa-paper-plane"></i> Enviar Mensagem
+                        </button>
+
+                        <div id="form-success" class="success-message" style="display: none;">
+                            <i class="fas fa-check-circle"></i> Mensagem enviada com sucesso!
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>The Next Step</h3>
+                    <p>Prepare-se para o futuro do trabalho</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="vagas.html">Vagas</a></li>
+                        <li><a href="reskilling.html">Reskilling</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li><a href="contato.html">Fale Conosco</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="integrantes.html">Integrantes</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 The Next Step. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/menu.js"></script>
+    <script src="js/contato.js"></script>
+</body>
+</html>
+

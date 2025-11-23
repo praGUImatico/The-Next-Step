@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - The Next Step</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-rocket"></i>
+                <h1>The Next Step</h1>
+            </div>
+            <nav class="nav" id="nav">
+                <a href="index.html" class="nav-link"><i class="fas fa-home"></i> Início</a>
+                <a href="integrantes.html" class="nav-link"><i class="fas fa-users"></i> Integrantes</a>
+                <a href="sobre.html" class="nav-link"><i class="fas fa-info-circle"></i> Sobre</a>
+                <a href="faq.html" class="nav-link active"><i class="fas fa-question-circle"></i> FAQ</a>
+                <a href="contato.html" class="nav-link"><i class="fas fa-envelope"></i> Contato</a>
+                <a href="vagas.html" class="nav-link"><i class="fas fa-briefcase"></i> Vagas</a>
+                <a href="reskilling.html" class="nav-link"><i class="fas fa-graduation-cap"></i> Reskilling</a>
+            </nav>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section class="page-header">
+            <div class="container">
+                <h1>Perguntas Frequentes (FAQ)</h1>
+                <p>Tire suas dúvidas sobre o The Next Step</p>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <div class="container">
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <h3>O que é o The Next Step?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>
+                                O The Next Step é uma plataforma inovadora que conecta profissionais 
+                                às oportunidades do futuro do trabalho. Oferecemos recomendações 
+                                personalizadas de vagas usando IA, sistema de reskilling com cursos 
+                                e trilhas, gamificação para tornar o aprendizado engajador, e foco 
+                                em sustentabilidade e inclusão.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <h3>Como funciona o sistema de recomendações de IA?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>
+                                Nossa IA analisa seu perfil, incluindo habilidades, interesses e 
+                                grupos de diversidade, e compara com as vagas disponíveis. O sistema 
+                                calcula um score de compatibilidade baseado em múltiplos fatores e 
+                                apresenta as melhores oportunidades personalizadas para você.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <h3>O que são áreas emergentes?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>
+                                Áreas emergentes são campos de trabalho que estão em crescimento e 
+                                representam o futuro do trabalho. Incluem áreas como Inteligência 
+                                Artificial, Metaverso, Realidade Virtual/Aumentada, e outras 
+                                tecnologias inovadoras que estão transformando o mercado.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <h3>Como funciona a gamificação?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>
+                                Você ganha pontos ao realizar atividades como visualizar vagas, 
+                                candidatar-se, completar cursos e explorar áreas emergentes. Com 
+                                os pontos, você sobe de nível e pode conquistar badges. Isso torna 
+                                o processo de busca por oportunidades e aprendizado mais divertido 
+                                e motivador.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <h3>O que são vagas inclusivas?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>
+                                Vagas inclusivas são oportunidades especiais voltadas para grupos 
+                                subrepresentados no mercado de trabalho, como mulheres, pessoas negras, 
+                                LGBTQIA+, pessoas com deficiência, entre outros. Essas vagas promovem 
+                                diversidade e inclusão.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <h3>Como funciona o sistema de reskilling?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>
+                                Oferecemos um catálogo de cursos em diversas áreas como IA, 
+                                Sustentabilidade, Desenvolvimento e Soft Skills. Você pode fazer 
+                                cursos individuais ou seguir trilhas de aprendizado completas. 
+                                Ao completar cursos, você ganha pontos e desenvolve novas habilidades.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <h3>O que é o índice de bem-estar?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>
+                                O índice de bem-estar é uma métrica de 0 a 10 que avalia a qualidade 
+                                de vida oferecida pela empresa. Considera fatores como flexibilidade, 
+                                ambiente de trabalho, benefícios e políticas de bem-estar dos 
+                                colaboradores.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <h3>Os cursos são gratuitos?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>
+                                Oferecemos tanto cursos gratuitos quanto pagos. Você pode filtrar 
+                                os cursos para ver apenas os gratuitos. Todos os cursos, gratuitos 
+                                ou pagos, oferecem pontos ao serem completados.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <h3>Como posso cadastrar uma vaga?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>
+                                Na página de Vagas, clique no botão "Cadastrar Vaga" e preencha o 
+                                formulário com todas as informações necessárias. Você pode marcar 
+                                se a vaga é de área emergente, economia verde, inclusiva, e definir 
+                                o índice de bem-estar.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <h3>Como entro em contato com a equipe?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>
+                                Você pode usar o formulário de contato na página "Contato" ou 
+                                verificar a página "Integrantes" para encontrar os links do LinkedIn 
+                                e GitHub de cada membro da equipe.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>The Next Step</h3>
+                    <p>Prepare-se para o futuro do trabalho</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="vagas.html">Vagas</a></li>
+                        <li><a href="reskilling.html">Reskilling</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li><a href="contato.html">Fale Conosco</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="integrantes.html">Integrantes</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 The Next Step. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/menu.js"></script>
+    <script src="js/faq.js"></script>
+</body>
+</html>
+
